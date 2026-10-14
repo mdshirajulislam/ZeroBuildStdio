@@ -163,9 +163,9 @@ This project was developed as part of the **Software Engineering Lab (CSE 328)**
 | Name | Student ID | Intake & Section | Core Responsibilities |
 | :--- | :--- | :--- | :--- |
 | **Md Shirajul Islam** | **20245103198** | Intake 53, Sec 05 | **Project Lead**, Backend Core Routing & SaaS Architecture |
-| **Md Sad Ullah** | **20245103163** | Intake 53, Sec 05 | System Architecture & Database Design |
-| **Sanjana Zarin** | **20245103169** | Intake 53, Sec 05 | Quality Assurance, Unit Testing & Validation |
-| **Abdullah Al Shawon** | **20245103200** | Intake 53, Sec 05 | Point of Sale (POS) Module & Courier Logistics |
+| **Md Sad Ullah** | **20245103163** | Intake 53, Sec 05 | Multi-Tenant Database Architecture & Shop Controller Logic |
+| **Sanjana Zarin** | **20245103169** | Intake 53, Sec 05 | Customer Shopping Cart Engine & Checkout Processing Workflow |
+| **Abdullah Al Shawon** | **20245103200** | Intake 53, Sec 05 | Product Search, Category Filter Engine & POS Module |
 | **Arpita Sannamat** | **20245103026** | Intake 53, Sec 05 | Storefront SSR Engine & Dynamic Theme Customizer |
 
 ### 👩‍🏫 Supervised By
