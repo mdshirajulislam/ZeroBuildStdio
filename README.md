@@ -70,6 +70,17 @@ ZeroBuildStdio/
 
 ---
 
+## 📌 Project Management (Jira Agile Tracking)
+
+This project strictly follows Agile Software Engineering practices. Development progress, epics, sprint tasks, and acceptance criteria are actively tracked on Jira:
+- **Jira Kanban Board:** [ZeroBuildStdio Jira Board](https://mdshirajulislam.atlassian.net/jira/software/projects/KAN/boards/2?filter=&groupBy=none)
+- **Team Contributors:**
+  - **Md. Shirajul Islam** (Backend Core Routing, SaaS Architecture & Integration)
+  - **Niladri** (Product Management & Multi-Tenant Controllers)
+  - **Arpita** (Storefront Dynamic SSR & UI Theme Engine)
+
+---
+
 ## 🤝 Contributing
 Contributions, issues, and feature requests are always welcome! Let's build together without the bloat of frameworks.
 
@@ -77,4 +88,5 @@ Contributions, issues, and feature requests are always welcome! Let's build toge
 This project is open-source and available under the MIT License.
 
 ---
-*Crafted with precision by Md. Shirajul Islam.*
+*Crafted with precision by Md. Shirajul Islam & Team.*
+
