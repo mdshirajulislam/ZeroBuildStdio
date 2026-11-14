@@ -1,0 +1,29 @@
+Issue Type,Issue Key,Summary,Description,Component,Story Points,Priority,Assignee,Fix Version,Status
+Epic,KAN-E1,Framework-less Multi-Tenant SaaS Engine,Core backend architecture and tenant routing engine built strictly using Python 3.11 standard library.,Backend-Engine,,Highest,Md Shirajul Islam,v0.1.0-alpha,Done
+Epic,KAN-E2,Storefront Dynamic Server-Side Rendering,Server-Side Rendered customer storefront and live theme customization.,Storefront-SSR,,High,Arpita Sannamat,v0.2.0-beta,Done
+Epic,KAN-E3,Product Catalog & Media Architecture,Product catalog CRUD operations and Base64 in-memory image pipeline.,Product-Catalog,,High,Abdullah Al Shawon,v0.2.0-beta,Done
+Epic,KAN-E4,Customer Cart & Checkout Experience,Shopping cart state management and order summary calculation.,Cart-Checkout,,High,Sanjana Zarin,v1.0.0-release,Done
+Epic,KAN-E5,Quality Assurance Testing & Deployment,End-to-end regression testing and deployment validation.,Backend-Engine,,High,Md Shirajul Islam,v1.0.0-release,Done
+Story,KAN-15,Tenant Subdomain Dynamic Routing Engine,"As a SaaS tenant, I want my store accessible via a unique subdomain or path (/s/<subdomain>), so that customers can access my independent branded storefront.",Backend-Engine,5,Highest,Md Shirajul Islam,v0.1.0-alpha,Done
+Task,KAN-15.1,Implement regex URL matcher in routes.py,Create dynamic URL dispatcher using Python standard library re module.,Backend-Engine,2,High,Md Shirajul Islam,v0.1.0-alpha,Done
+Task,KAN-15.2,Add 404 fallback page handler,Return user-friendly 404 error page for unmapped tenant subdomains.,Backend-Engine,1,Medium,Md Shirajul Islam,v0.1.0-alpha,Done
+Story,KAN-16,Shop Configuration API & Multi-Tenant Data Isolation,"As an admin, I want tenant data strictly isolated in the persistence layer, so that one merchant cannot modify another merchant's catalog.",Multi-Tenant-Store,5,High,Md Sad Ullah,v0.1.0-alpha,Done
+Task,KAN-16.1,Create shop_controller.py CRUD logic,Implement shop profile create and update handlers.,Multi-Tenant-Store,3,High,Md Sad Ullah,v0.1.0-alpha,Done
+Task,KAN-16.2,Implement multi-tenant JSON isolation,Separate tenant records by shop_id in persistence store.,Multi-Tenant-Store,2,Medium,Md Sad Ullah,v0.1.0-alpha,Done
+Story,KAN-17,Dynamic Storefront SSR Template Engine,"As a shopper, I want the storefront to render dynamically with semantic HTML5/CSS3 without external frontend build tools.",Storefront-SSR,8,Highest,Arpita Sannamat,v0.2.0-beta,Done
+Task,KAN-17.1,Build HTML/CSS template generator in Python,Implement pure Python string builder for storefront HTML.,Storefront-SSR,5,High,Arpita Sannamat,v0.2.0-beta,Done
+Task,KAN-17.2,Implement mobile viewport responsive styles,Ensure product grid collapses cleanly on mobile devices.,Storefront-SSR,3,Medium,Arpita Sannamat,v0.2.0-beta,Done
+Story,KAN-18,Product CRUD Operations & In-Memory Persistence,"As a shop manager, I want to create, update, list, and delete products, so that my store showcases an up-to-date catalog.",Product-Catalog,5,High,Abdullah Al Shawon,v0.2.0-beta,Done
+Task,KAN-18.1,Build /api/products handler endpoints,Implement GET, POST, PUT, DELETE methods in product_controller.py.,Product-Catalog,3,High,Abdullah Al Shawon,v0.2.0-beta,Done
+Task,KAN-18.2,Validate stock count and SKU uniqueness,Add server-side validations for product attributes.,Product-Catalog,2,Medium,Abdullah Al Shawon,v0.2.0-beta,Done
+Story,KAN-19,Dual Pricing Engine (Regular vs Sale Price),"As a merchant, I want to set a promotional discount price alongside the regular price, so that customers see the discount on storefront.",Product-Catalog,3,High,Abdullah Al Shawon,v0.2.0-beta,Done
+Story,KAN-20,Base64 Image Upload & In-Memory Media Pipeline,"As a store owner, I want to upload product images directly via modal without S3 dependencies, so that hosting costs remain zero.",Product-Catalog,3,Medium,Md Shirajul Islam,v0.2.0-beta,Done
+Story,KAN-21,Admin Live Theme Customizer Panel,"As an admin, I want to customize primary colors, banner text, and category layout with live preview, so that I can visually inspect changes.",Admin-Customizer,8,High,Arpita Sannamat,v0.2.0-beta,Done
+Story,KAN-22,Product Search, Category Filter & POS Integration,"As a customer, I want to search products by title and filter by category, so that I can quickly find items.",Product-Catalog,5,Medium,Abdullah Al Shawon,v0.2.0-beta,Done
+Story,KAN-23,Customer Shopping Cart & Order Summary Workflow,"As a buyer, I want to add items to an active shopping cart and view an itemized total, so that I can review my order prior to checkout.",Cart-Checkout,5,High,Sanjana Zarin,v1.0.0-release,Done
+Task,KAN-23.1,Cart local state and badge counter,Implement client-side cart state and navbar counter badge.,Cart-Checkout,3,High,Sanjana Zarin,v1.0.0-release,Done
+Task,KAN-23.2,Itemized subtotal and discount calculation,Calculate line item totals, discounts, and order grand total.,Cart-Checkout,2,Medium,Sanjana Zarin,v1.0.0-release,Done
+Story,KAN-24,Automated Testing & QA Validation,"As a QA engineer, I want automated test suites verifying all HTTP endpoints and response schemas, so that regressions are caught.",Backend-Engine,3,High,Sanjana Zarin,v1.0.0-release,Done
+Bug,KAN-25,Base64 image payload truncated on large files,Uploading image > 1.5MB in modal gets truncated by HTTP reader buffer limit.,Backend-Engine,,High,Md Shirajul Islam,v0.2.0-beta,Done
+Bug,KAN-26,Promotional price can exceed regular price,Validation missing when promotional sale price is set higher than regular price.,Product-Catalog,,Medium,Abdullah Al Shawon,v0.2.0-beta,Done
+Bug,KAN-27,Cart drawer does not persist on page refresh,Refreshing browser clears the shopping cart state.,Cart-Checkout,,Low,Sanjana Zarin,v1.0.0-release,Done
