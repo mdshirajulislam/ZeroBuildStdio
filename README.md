@@ -112,6 +112,9 @@ ZeroBuildStdio/
 ├── docs/                     # Official academic project reports & documentation
 │   ├── Lab_02_Software_Development_Approach_Selection.pdf
 │   ├── Lab_03_Software_Requirements_Specification_SRS.pdf
+│   ├── Lab_07_Software_Engineering_Lab_JIRA_Project_Management.pdf
+│   ├── Lab_07_Jira_Agile_Project_Management.md
+│   ├── jira_import_lab07.csv
 │   └── Project_Proposal_ZeroBuild_Studio.pdf
 ├── screenshots/              # High-resolution application UI screenshots
 │   ├── storefront_preview.png
@@ -186,6 +189,7 @@ Development follows an **Agile - Incremental Development Model** managed activel
 - **Official Documentation Available in `/docs`:**
   - `Lab_02`: Software Development Approach Selection Report
   - `Lab_03`: Formal Software Requirements Specification (SRS Document with 33 FRs & 14 NFRs)
+  - `Lab_07`: [Agile Project Management Using JIRA (Lab 07 Report)](docs/Lab_07_Jira_Agile_Project_Management.md) • [PDF Download](docs/Lab_07_Software_Engineering_Lab_JIRA_Project_Management.pdf) • [1-Click JIRA Import CSV](docs/jira_import_lab07.csv)
   - `Proposal`: Complete ZeroBuild Studio SaaS E-Commerce Project Proposal
 
 ---
